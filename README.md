@@ -2,6 +2,8 @@
 
 一个基于 Docker 的 ComfyUI 弹性 Serverless 应用，提供完整的前后端分离架构和用户友好的界面。
 
+<https://hadoop.nexmoe.com/>
+
 ## 项目特点
 
 - 🐳 完整的 Docker 化部署方案
@@ -59,7 +61,7 @@ docker run -it --rm --gpus all -p 3000:3000 -p 8188:8188 --name comfyui gongji/c
 容器启动后可以访问：
 
 - ComfyUI 界面：<http://localhost:8188>
-- API 接口：<http://localhost:3000>
+- API 接口：<http://localhost:3000/docs>
 
 ### 前端本地测试
 
@@ -86,13 +88,6 @@ pnpm dev
 ## ComfyUI Docker 部署到 Serverless 弹性平台
 
 请参考 [共绩科技的 ComfyUI 部署文档](https://gongjiyun.com/docs/tutorials/comfyui.html)
-
-## 模型管理
-
-- 将 Stable Diffusion 模型放置在 `backend/checkpoints/` 目录
-- ControlNet 模型存放在 `backend/controlnet/` 目录
-- LoRA 模型存放在 `backend/loras/` 目录
-- 自定义节点可以放在 `backend/custom_nodes/` 目录
 
 ## API 文档
 
