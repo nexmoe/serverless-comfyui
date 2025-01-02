@@ -1,0 +1,21 @@
+version: '3.9'
+services:
+  comfyui:
+    image: harbor.suanleme.cn/xuwenzheng/nex-comfy:sanhua0.5
+    ports:
+      - "3008:3000"
+      - "8189:8180"
+    labels:
+      # 第一个转发端口
+      - suanleme_0.http.port=3000
+      - suanleme_0.http.prefix=napi
+      - suanleme_1.http.port=8188
+      - suanleme_1.http.prefix=neui
+      # 第二个转发端口
+    deploy:
+      resources:
+        reservations:
+          devices:
+            - driver: nvidia # 使用 NVIDIA GPU 驱动
+              count: 1 # 预留的 GPU 数量
+              capabilities: [ gpu ] # 指定 GPU 功能

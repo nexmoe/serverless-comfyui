@@ -1,0 +1,9 @@
+{
+  "version": "1",
+  "name": "comfy-docker",
+  "type": "collection",
+  "ignore": [
+    "node_modules",
+    ".git"
+  ]
+}
