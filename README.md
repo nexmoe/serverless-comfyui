@@ -26,6 +26,29 @@ comfy-docker/
 └── bruno/            # API 测试文件
 ```
 
+frontend/ 目录结构如下，模型 和 自定义节点 需要自行下载安装
+
+```
+.
+├── Dockerfile
+├── checkpoints
+│   └── dreamshaperXL_sfwV2TurboDPMSDE.safetensors
+├── controlnet
+│   ├── sai_xl_canny_256lora.safetensors
+│   └── sai_xl_depth_256lora.safetensors
+├── custom_nodes
+│   ├── ComfyUI-Custom-Scripts
+│   ├── ComfyUI-WD14-Tagger
+│   ├── ComfyUI_Comfyroll_CustomNodes
+│   ├── comfyui-art-venture
+│   └── comfyui_controlnet_aux
+├── docker-compose.yml
+├── loras
+│   └── StudioGhibli.Redmond-StdGBRRedmAF-StudioGhibli.safetensors
+├── provisioning.sh  // 自定义脚本
+└── sanhua.json  // 工作流
+```
+
 ## 环境要求
 
 - Docker & Docker Compose
