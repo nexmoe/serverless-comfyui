@@ -2,7 +2,7 @@
 
 一个基于 Docker 的 ComfyUI 弹性 Serverless 应用，提供完整的前后端分离架构和用户友好的界面。
 
-<https://hadoop.nexmoe.com/>
+Demo:<https://hadoop.nexmoe.com/>
 
 ## 项目特点
 
@@ -70,8 +70,8 @@ frontend/ 目录结构如下，模型 和 自定义节点 需要自行下载安�
 ## 环境要求
 
 - Docker & Docker Compose
-- NVIDIA GPU
-- 足够的磁盘空间用于存储模型
+- NVIDIA GPU（当前演示工作流需要 12G 显存以上）
+- 足够的磁盘空间（100G~200G）用于存储模型
 
 ## 快速开始
 
