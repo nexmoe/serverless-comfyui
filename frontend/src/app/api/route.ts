@@ -205,7 +205,8 @@ export async function POST(request: Request) {
 
         return NextResponse.json({
             uploadUrl: url,
-            s3Key: s3Key
+            s3Key: s3Key,
+            publicUrl: `${process.env.R2_PUBLIC_ENDPOINT}/${s3Key}`
         });
     } catch (error) {
         console.error(error);

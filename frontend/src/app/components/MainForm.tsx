@@ -41,7 +41,7 @@ export function MainForm() {
 			throw new Error('获取上传链接失败')
 		}
 
-		const { uploadUrl, s3Key } = await response.json()
+		const { uploadUrl, s3Key, publicUrl } = await response.json()
 		console.log('uploadUrl', uploadUrl)
 
 		const uploadResponse = await fetch(uploadUrl, {
@@ -59,7 +59,7 @@ export function MainForm() {
 		}
 		console.log('s3Key', s3Key)
 
-		return `https://pub-c2aa385656bd498eb3a4590779973a34.r2.dev/${s3Key}`
+		return publicUrl
 	}
 
 	const handleSubmit = async (e: React.FormEvent) => {

@@ -41,7 +41,7 @@ export default function Page({ params }: PageProps) {
 					<img
 						width={512}
 						height={512}
-						src={`https://hadoop.102417.xyz/uploads/${id}`}
+						src={`${process.env.R2_PUBLIC_ENDPOINT}/uploads/${id}`}
 						alt="Generated Image"
 						className="w-full h-auto object-cover rounded-2xl shadow-lg overflow-hidden"
 					/>
