@@ -44,7 +44,7 @@ export async function POST(request: Request) {
         );
 
         // 构建 S3 URL
-        const s3Url = `${process.env.R2_PUBLIC_URL}/${filename}`;
+        const s3Url = `${process.env.R2_PUBLIC_ENDPOINT}/${filename}`;
 
         // 使用 generateImage 处理图片
         const imageBase64 = await generateImage(s3Url);
