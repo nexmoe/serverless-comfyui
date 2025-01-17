@@ -34,6 +34,8 @@ export async function POST(request: Request) {
         const arrayBuffer = await file.arrayBuffer();
         const buffer = Buffer.from(arrayBuffer);
         
+        console.log(bucket)
+
         await S3.send(
             new PutObjectCommand({
                 Bucket: bucket,
@@ -52,6 +54,9 @@ export async function POST(request: Request) {
         const base64Data = imageBase64.replace(/^data:image\/\w+;base64,/, '');
         const imageBuffer = Buffer.from(base64Data, 'base64');
 
+        return NextResponse.json(
+            { te: '处理图片时出错', image: imageBase64 },
+        );
         // 返回处理后的图片，设置缓存和类型头
         return new NextResponse(imageBuffer, {
             headers: {
