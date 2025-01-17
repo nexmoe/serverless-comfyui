@@ -114,7 +114,7 @@ interface LogEntry {
  * @param imageUrl - 输入图片的 URL
  * @returns Promise<string> - base64 格式的生成图片
  */
-async function generateImage(imageUrl: string) {
+export async function generateImage(imageUrl: string) {
     // 克隆 prompt 模板并设置输入图片
     const promptData = { ...promptob };
     promptData.prompt["30"].inputs.image = imageUrl;
