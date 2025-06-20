@@ -128,7 +128,7 @@ pnpm dev
 
 ## ComfyUI Docker 部署到 Serverless 弹性平台
 
-请参考 [共绩科技的 ComfyUI 部署文档](https://gongjiyun.com/docs/tutorials/comfyui.html)
+请参考 [共绩科技的 ComfyUI 部署文档](https://www.gongjiyun.com/docs/docker/tutorials/comfyui.html)
 
 ## API 文档
 
