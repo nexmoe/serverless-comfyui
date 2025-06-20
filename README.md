@@ -85,7 +85,7 @@ cd backend
 
 2. 下载模型文件
 
-请参考：<https://gongjiyun.com/docs/tutorials/comfyui.html#%E4%B8%8B%E8%BD%BD%E6%A8%A1%E5%9E%8B%E5%92%8C%E6%89%A9%E5%B1%95>
+请参考：<https://www.gongjiyun.com/docs/docker/tutorials/comfyui.html>
 
 3. 构建 Docker 镜像
 
